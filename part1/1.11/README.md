@@ -8,7 +8,30 @@ Use [openjdk image](https://hub.docker.com/_/openjdk) `FROM openjdk:_tag_` to ge
 
 You’ve completed the exercise when you see a ‘Success’ message in your browser.
 
+## Dockerfile
+
+```docker
+# Need Java 8 installed
+FROM openjdk:8
+
+# Project should open in 8080
+EXPOSE 8080
+
+# Convention
+WORKDIR /usr/src/app
+
+COPY ./spring-example-project .
+
+# Build project
+RUN ./mvnw package
+
+# Run
+CMD ["java", "-jar", "./target/docker-example-1.1.3.jar"]
 ```
+
+## Commands
+
+```sh
 > docker build . -t spring-project
 > docker run -p 3000:8080 spring-project
 ```

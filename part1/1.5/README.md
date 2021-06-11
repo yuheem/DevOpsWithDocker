@@ -6,7 +6,7 @@ Here is the same application but instead of ubuntu is using alpine: `devopsdocke
 
 Pull both images and compare the image sizes. Go inside the alpine container and make sure the secret message functionality is the same. Alpine version doesn’t have bash but it has sh.
 
-```
+```sh
 > docker pull devopsdockeruh/simple-web-service:ubuntu
 > docker pull devopsdockeruh/simple-web-service:alpine
 > docker images
@@ -19,7 +19,7 @@ devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 months ago   15.7
 
 Image with the `:alpine` tag is significantly smaller compared to the image with the `:ubuntu` tag.
 
-```
+```sh
 > docker container run -it -d --name alpine devopsdockeruh/simple-web-service:alpine
 > docker exec -it alpine sh
 > /usr/src/app # tail -f ./text.log

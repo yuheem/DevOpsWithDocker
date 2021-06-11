@@ -10,7 +10,26 @@ Submit the Dockerfile.
 
 As in other exercises, do not alter the code of the project
 
+## Dockerfile
+
 ```
+FROM golang:1.16
+
+EXPOSE 8080
+
+WORKDIR /go/src/app
+
+COPY ./example-backend .
+
+RUN go build
+RUN go test ./...
+
+CMD ./server
+```
+
+## Commands
+
+```sh
 > docker build . -t example-frontend
 > docker run -p 5000:5000 example-frontend
 ```

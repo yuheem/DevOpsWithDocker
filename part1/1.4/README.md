@@ -6,7 +6,7 @@ You will notice that a few things required for proper execution are missing. Be 
 
 This time return the command you used to start process and the command(s) you used to fix the ensuing problems.
 
-```
+```sh
 > docker run -d --rm -it --name missing-dependencies ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
 > docker exec -it missing-dependencies bash
 > apt-get update

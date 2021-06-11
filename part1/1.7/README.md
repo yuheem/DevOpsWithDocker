@@ -12,7 +12,19 @@ In this exercise create a Dockerfile and use FROM and CMD to create a brand new 
 
 Return the Dockerfile and the command you used to run the container.
 
+## Dockerfile
+
+```docker
+# Start from the alpine simple-web-service image
+FROM devopsdockeruh/simple-web-service:alpine
+
+# Start the web server
+CMD server
 ```
+
+## Commands
+
+```sh
 > docker build . -t web-server
 > docker run web-server
 ```

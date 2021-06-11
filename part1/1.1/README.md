@@ -6,7 +6,7 @@ Stop 2 of the containers leaving 1 up.
 
 Submit the output for `docker ps -a` which shows 2 stopped containers and one running.
 
-```
+```sh
 > docker ps -a
 CONTAINER ID   IMAGE               COMMAND                  CREATED              STATUS                         PORTS     NAMES
 9ec77b77a852   nginx               "/docker-entrypoint.…"   41 seconds ago       Exited (0) 13 seconds ago                mystifying_lamport

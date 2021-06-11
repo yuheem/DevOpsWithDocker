@@ -4,7 +4,7 @@ Image `devopsdockeruh/simple-web-service:ubuntu` will start a container that out
 
 Submit the secret message and command(s) given as your answer.
 
-```
+```sh
 > docker run -d -it --rm --name secret-message devopsdockeruh/simple-web-service:ubuntu
 > docker exec -it secret-message bash
 > tail -f ./text.log
