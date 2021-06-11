@@ -6,6 +6,6 @@ Image `devopsdockeruh/simple-web-service` will start a web service in port `8080
 
 Submit your used commands for this exercise.
 
-```
+```sh
 > docker run -p 3000:8080 web-server
 ```
