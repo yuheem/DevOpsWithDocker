@@ -6,7 +6,7 @@ This course is an introductory course to Docker and docker-compose. Also peek in
 
 ## Learning Objectives
 
-**Part 1**
+**[Part 1](./part1)**
 
 - Can explain what images and containers are and their relationship
 - Can build images with Docker for existing projects and run them
