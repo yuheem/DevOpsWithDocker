@@ -1,0 +1,40 @@
+version: "3.5"
+
+services:
+  redis_db:
+    image: redis
+    ports:
+      - 6379:6379
+    container_name: redis_db
+
+  postgres_db:
+    image: postgres:13.2-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+    container_name: postgres_db
+    volumes:
+      - database:/var/lib/postgresql/data
+
+  backend:
+    image: yuheem98/example-backend
+    ports:
+      - 8080:8080
+    environment:
+      REDIS_HOST: redis_db
+      POSTGRES_HOST: postgres_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DATABASE: db
+    depends_on:
+      - postgres_db
+
+  frontend:
+    image: yuheem98/example-frontend
+    ports:
+      - 5000:5000
+
+volumes:
+  database:
