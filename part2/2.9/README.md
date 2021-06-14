@@ -5,9 +5,9 @@ Postgres image uses a volume by default. Manually define volumes for the databas
 After you have configured the volume:
 
 - Save a few messages through the frontend
-- Run docker-compose down
-- Run docker-compose up and see that the messages are available after refreshing browser
-- Run docker-compose down and delete the volume folder manually
-- Run docker-compose up and the data should be gone
+- Run `docker-compose down`
+- Run `docker-compose up` and see that the messages are available after refreshing browser
+- Run `docker-compose down` and delete the volume folder manually
+- Run `docker-compose up` and the data should be gone
 
 Maybe it would be simpler to back them up now that you know where they are.
