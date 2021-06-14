@@ -15,7 +15,7 @@ This course is an introductory course to Docker and docker-compose. Also peek in
 
 - Can manage complex multi-container applications with docker-compose
 
-### Part 3
+### [Part 3](./part3)
 
 - Can optimize image sizes and security for production
 - Know why docker-compose is not an optimal productions and know what an optimal production solution is
