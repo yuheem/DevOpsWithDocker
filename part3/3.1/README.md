@@ -10,6 +10,6 @@ Use GitHub, Github Actions, and Heroku to deploy a container to heroku. You can 
 
 Submit a link to the repository with the config.
 
-Repository: https://github.com/yuheem/docker-hy.github.io
+Repository: <https://github.com/yuheem/docker-hy.github.io>
 
-Heroku app: https://yh98-coursematerial.herokuapp.com/
+Heroku app: <https://yh98-coursematerial.herokuapp.com/>
