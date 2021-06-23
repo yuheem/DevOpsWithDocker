@@ -11,6 +11,7 @@ Document the size after your changes.
 ## Before
 
 ```sh
+> docker images
 REPOSITORY                  TAG           IMAGE ID       CREATED              SIZE
 yuheem98/example-frontend   latest        53d55b5d8740   About a minute ago   455MB
 yuheem98/example-backend    latest        0dfed7af574b   3 minutes ago        1.01GB
@@ -19,6 +20,7 @@ yuheem98/example-backend    latest        0dfed7af574b   3 minutes ago        1.
 ## After
 
 ```sh
+> docker images
 REPOSITORY                  TAG           IMAGE ID       CREATED             SIZE
 yuheem98/example-backend    latest        331ee910c566   16 seconds ago      448MB
 yuheem98/example-frontend   latest        b8e7e7dcc0cc   56 seconds ago      344MB
